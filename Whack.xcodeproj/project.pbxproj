@@ -12,6 +12,12 @@
 		000A6B4C2AC4E01100C8B328 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A6B4B2AC4E01100C8B328 /* Item.swift */; };
 		000A6B4E2AC4E01300C8B328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000A6B4D2AC4E01300C8B328 /* Assets.xcassets */; };
 		000A6B512AC4E01300C8B328 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000A6B502AC4E01300C8B328 /* Preview Assets.xcassets */; };
+		000A6B592AC5AB4F00C8B328 /* GridStack in Frameworks */ = {isa = PBXBuildFile; productRef = 000A6B582AC5AB4F00C8B328 /* GridStack */; };
+		000A6B5C2AC5AC1D00C8B328 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 000A6B5B2AC5AC1D00C8B328 /* Kingfisher */; };
+		00A08CED2AC5E380007C5071 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A08CEC2AC5E380007C5071 /* ImageData.swift */; };
+		00A08CF02AC5E3B1007C5071 /* ImageCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A08CEF2AC5E3B1007C5071 /* ImageCounter.swift */; };
+		00A08CF22AC5E41F007C5071 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A08CF12AC5E41F007C5071 /* DetailView.swift */; };
+		00A9C5342B6890CB00BEFE4D /* GridStack in Frameworks */ = {isa = PBXBuildFile; productRef = 00A9C5332B6890CB00BEFE4D /* GridStack */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +27,9 @@
 		000A6B4B2AC4E01100C8B328 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		000A6B4D2AC4E01300C8B328 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		000A6B502AC4E01300C8B328 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		00A08CEC2AC5E380007C5071 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		00A08CEF2AC5E3B1007C5071 /* ImageCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCounter.swift; sourceTree = "<group>"; };
+		00A08CF12AC5E41F007C5071 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +37,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000A6B5C2AC5AC1D00C8B328 /* Kingfisher in Frameworks */,
+				00A9C5342B6890CB00BEFE4D /* GridStack in Frameworks */,
+				000A6B592AC5AB4F00C8B328 /* GridStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,11 +65,13 @@
 		000A6B462AC4E01100C8B328 /* Whack */ = {
 			isa = PBXGroup;
 			children = (
+				00A08CEE2AC5E39C007C5071 /* ComicViewer */,
 				000A6B472AC4E01100C8B328 /* WhackApp.swift */,
 				000A6B492AC4E01100C8B328 /* ContentView.swift */,
 				000A6B4B2AC4E01100C8B328 /* Item.swift */,
 				000A6B4D2AC4E01300C8B328 /* Assets.xcassets */,
 				000A6B4F2AC4E01300C8B328 /* Preview Content */,
+				00A08CEC2AC5E380007C5071 /* ImageData.swift */,
 			);
 			path = Whack;
 			sourceTree = "<group>";
@@ -68,6 +82,15 @@
 				000A6B502AC4E01300C8B328 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		00A08CEE2AC5E39C007C5071 /* ComicViewer */ = {
+			isa = PBXGroup;
+			children = (
+				00A08CEF2AC5E3B1007C5071 /* ImageCounter.swift */,
+				00A08CF12AC5E41F007C5071 /* DetailView.swift */,
+			);
+			path = ComicViewer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +109,11 @@
 			dependencies = (
 			);
 			name = Whack;
+			packageProductDependencies = (
+				000A6B582AC5AB4F00C8B328 /* GridStack */,
+				000A6B5B2AC5AC1D00C8B328 /* Kingfisher */,
+				00A9C5332B6890CB00BEFE4D /* GridStack */,
+			);
 			productName = Whack;
 			productReference = 000A6B442AC4E01100C8B328 /* Whack.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +142,10 @@
 				Base,
 			);
 			mainGroup = 000A6B3B2AC4E01100C8B328;
+			packageReferences = (
+				000A6B572AC5AB4F00C8B328 /* XCRemoteSwiftPackageReference "GridStack" */,
+				000A6B5A2AC5AC1D00C8B328 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 000A6B452AC4E01100C8B328 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,8 +173,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				000A6B4A2AC4E01100C8B328 /* ContentView.swift in Sources */,
+				00A08CF22AC5E41F007C5071 /* DetailView.swift in Sources */,
 				000A6B4C2AC4E01100C8B328 /* Item.swift in Sources */,
 				000A6B482AC4E01100C8B328 /* WhackApp.swift in Sources */,
+				00A08CED2AC5E380007C5071 /* ImageData.swift in Sources */,
+				00A08CF02AC5E3B1007C5071 /* ImageCounter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +383,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		000A6B572AC5AB4F00C8B328 /* XCRemoteSwiftPackageReference "GridStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pietropizzi/GridStack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.3;
+			};
+		};
+		000A6B5A2AC5AC1D00C8B328 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		000A6B582AC5AB4F00C8B328 /* GridStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 000A6B572AC5AB4F00C8B328 /* XCRemoteSwiftPackageReference "GridStack" */;
+			productName = GridStack;
+		};
+		000A6B5B2AC5AC1D00C8B328 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 000A6B5A2AC5AC1D00C8B328 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		00A9C5332B6890CB00BEFE4D /* GridStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 000A6B572AC5AB4F00C8B328 /* XCRemoteSwiftPackageReference "GridStack" */;
+			productName = GridStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 000A6B3C2AC4E01100C8B328 /* Project object */;
 }

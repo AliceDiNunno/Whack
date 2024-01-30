@@ -7,7 +7,37 @@
 
 import SwiftUI
 import SwiftData
+import GridStack
+import Kingfisher
+ 
 
+struct ContentView: View {
+    @EnvironmentObject var imageData: ImageData 
+    
+    var body: some View {
+      /*  NavigationView{
+            GridStack(minCellWidth: UIScreen.main.bounds.width/3-20, spacing: 3, numItems: imageData.photos.count) {
+                index, cellWidth in
+                
+                NavigationLink(destination:
+                                DetailView()
+                    .environmentObject(ImageCounter.init(index: index))) {
+                        KFImage(URL(string: self.imageData.photos[index].name))
+                            .renderingMode(.original)
+                            .resizable()
+                            .scaledToFit()
+                            .cornerRadius(12)
+                    }
+            }*/
+            DetailView().environmentObject(ImageCounter.init(index: 0))
+       // }
+    }
+}
+
+
+
+
+/*
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
@@ -54,8 +84,10 @@ struct ContentView: View {
         }
     }
 }
-
-#Preview {
-    ContentView()
+*/
+/*#Preview {
+    @Binding(projectedValue: false) var fspreview: Bool
+    ContentView(isFullscreen: $fspreview)
         .modelContainer(for: Item.self, inMemory: true)
 }
+*/

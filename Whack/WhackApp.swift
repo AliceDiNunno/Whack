@@ -24,9 +24,10 @@ struct WhackApp: App {
     }()
 
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-        .modelContainer(sharedModelContainer)
+         WindowGroup {
+            ContentView().environmentObject(ImageData())
+                 .persistentSystemOverlays(.hidden)
+         }
+        //.modelContainer(sharedModelContainer)
     }
 }
